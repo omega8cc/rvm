@@ -798,7 +798,7 @@ rvm_install_validate_volume_mount_mode()
         partition=`df -P $path | awk 'END{print $1}'`
 
         test_exec=$(mktemp $path/rvm-exec-test.XXXXXX)
-        echo '#!/bin/sh' > "$test_exec"
+        echo '#!/bin/bash' > "$test_exec"
         chmod +x "$test_exec"
 
         if ! "$test_exec"
