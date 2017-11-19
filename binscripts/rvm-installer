@@ -807,7 +807,7 @@ rvm_install_validate_volume_mount_mode()
           printf "%b" "
 It looks that scripts located in ${path}, which would be RVM destination ${rvm_path},
 are not executable. One of the reasons might be that partition ${partition} holding this location
-is mounted in *noexec* mode, which prevents RVM from working correctly. Please verify your setup 
+is mounted in *noexec* mode, which prevents RVM from working correctly. Please verify your setup
 and re-mount partition ${partition} without the noexec option."
           exit 2
         fi
